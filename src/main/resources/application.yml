@@ -3,11 +3,11 @@ server:
  
 spring:
     application:
-        name: eureka_provider
+        name: eureka-provider
 
 eureka:
     instance:
-        instance-id: eureka_provider-8081
+        instance-id: eureka-provider-8081
         prefer-ip-address: true # 访问路径可以显示 IP
     client:
         service-url:
