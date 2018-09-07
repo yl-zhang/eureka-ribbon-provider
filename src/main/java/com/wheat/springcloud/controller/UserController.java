@@ -17,6 +17,7 @@ public class UserController {
 	@RequestMapping("/get/{id}")
 	public User get(@PathVariable("id") Integer id) {
 		try {
+			// 通过线程睡眠导致接口连接超时
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
