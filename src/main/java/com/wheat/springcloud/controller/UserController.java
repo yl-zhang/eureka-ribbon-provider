@@ -16,6 +16,11 @@ public class UserController {
 
 	@RequestMapping("/get/{id}")
 	public User get(@PathVariable("id") Integer id) {
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return this.userService.getById(id);
 	}
 }
